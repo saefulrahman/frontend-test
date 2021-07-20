@@ -1,6 +1,8 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import { Button } from "reactstrap";
+import "assets/scss/style.scss";
 
 function App() {
   return (
@@ -19,6 +21,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Button color="primary">primary</Button>
     </div>
   );
 }
