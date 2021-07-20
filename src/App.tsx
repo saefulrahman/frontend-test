@@ -3,6 +3,7 @@ import { HashRouter as Router, Route, Switch } from "react-router-dom";
 // import { render } from "react-dom";
 
 import "assets/scss/style.scss";
+
 import LandingPage from "pages/LandingPage";
 
 function App() {
