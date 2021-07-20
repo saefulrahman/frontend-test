@@ -1,10 +1,15 @@
 import React, { Component } from "react";
+
+import Header from "parts/Header";
+import Footer from "parts/Footer";
 export default class LandingPage extends Component {
   state = {};
   render() {
     return (
       <>
-        <h1>Hello World!</h1>
+        <Header />
+        <main>halo</main>
+        <Footer />
       </>
     );
   }
