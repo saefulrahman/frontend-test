@@ -1,6 +1,5 @@
 import React from "react";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-// import { render } from "react-dom";
 
 import "assets/scss/style.scss";
 
@@ -10,11 +9,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div>
-          <Switch>
-            <Route exact path="/" component={LandingPage} />
-          </Switch>
-        </div>
+        <Switch>
+          <Route exact path="/" component={LandingPage} />
+        </Switch>
       </Router>
     </div>
   );

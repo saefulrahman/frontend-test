@@ -20,18 +20,16 @@ const TopHeadlines: FC<TopHeadlinesProps> = ({ items }) => {
               <div className="col-lg-4 d-flex align-items-stretch mb-4">
                 <Card>
                   <a href="" title="{article.title}">
-                    <CardImg top src={article.title} alt={article.title} />
+                    <CardImg top src={article.urlToImage} alt={article.title} width="336" height="190" />
                   </a>
                   <CardBody>
-                    <div className="date">
-                      {article.id} <span className="dot"></span> Kompas.Com
-                    </div>
+                    <div className="date">{article.publishedAt}</div>
                     <CardTitle tag="h3">
                       <a href="" title={article.title}>
                         {article.title}
                       </a>
                     </CardTitle>
-                    <CardText>{article.body}</CardText>
+                    <CardText>{article.description}</CardText>
                   </CardBody>
                 </Card>
               </div>
