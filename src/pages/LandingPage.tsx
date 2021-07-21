@@ -6,24 +6,20 @@ import TopHeadlines from "parts/TopHeadlines";
 import AllPosts from "parts/AllPosts";
 import Footer from "parts/Footer";
 
+//Set Interface
 export interface Article {
   title: string;
   description: string;
   url: string;
   urlToImage: string;
   publishedAt: Date;
-  // id: number;
-  // userId?: number;
-  // title: string;
-  // body: string;
-  // headlines: [];
 }
-// export type ArticleList = Article[];
 
 const LandingPage: FC = (props) => {
   const [headlines, setHeadlinesList] = useState<Article[]>([]);
   const [allPosts, setAllPostsList] = useState<Article[]>([]);
 
+  //Set Document Title
   useEffect(() => {
     document.title = "Eigen News";
   }, []);
