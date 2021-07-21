@@ -23,6 +23,10 @@ const LandingPage: FC = (props) => {
   const [headlines, setHeadlinesList] = useState<Article[]>([]);
   const [allPosts, setAllPostsList] = useState<Article[]>([]);
 
+  useEffect(() => {
+    document.title = "Eigen News";
+  }, []);
+
   //Get API Top Headlines
   useEffect(() => {
     axios.get("https://newsapi.org/v2/top-headlines?country=id&pageSize=3&apiKey=8d227da4ad3a4ebe823c51f7a599c140").then((response) => {

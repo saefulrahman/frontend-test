@@ -20,7 +20,7 @@ const AllPosts: FC<AllPostsProps> = ({ items }) => {
                   <CardImg top src={article.urlToImage} alt={article.title} width="336" height="190" />
                 </a>
                 <CardBody>
-                  <div className="date">{article.publishedAt}</div>
+                  <div className="date">{moment(article.publishedAt).format("MMMM D, Y")}</div>
                   <CardTitle tag="h3">
                     <a href="" title={article.title}>
                       {article.title}
