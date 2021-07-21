@@ -1,10 +1,15 @@
-import React, { Fragment, FC } from "react";
+import React, { Fragment, FC, useEffect } from "react";
 
 import Header from "parts/Header";
 
 import Footer from "parts/Footer";
 
 const DetailPage: FC = (props) => {
+  //Set Document Title
+  useEffect(() => {
+    document.title = "Instagram Kenalkan Tool untuk Kontrol Konten Sensitif";
+  }, []);
+
   return (
     <Fragment>
       <Header />
