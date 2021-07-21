@@ -4,6 +4,7 @@
 
 .card {
   position: relative;
+  width: 100%;
   display: flex;
   flex-direction: column;
   min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
@@ -14,6 +15,14 @@
   border: $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
 
+  a {
+    text-decoration: none;
+    color: $gray-900;
+  }
+
+  a:hover {
+    color: $blue;
+  }
   > hr {
     margin-right: 0;
     margin-left: 0;
@@ -28,7 +37,7 @@
       @include border-top-radius($card-inner-border-radius);
     }
 
-    &:last-child  {
+    &:last-child {
       border-bottom-width: 0;
       @include border-bottom-radius($card-inner-border-radius);
     }
@@ -103,7 +112,6 @@
   }
 }
 
-
 //
 // Header navs
 //
@@ -148,7 +156,6 @@
   @include border-bottom-radius($card-inner-border-radius);
 }
 
-
 // Card deck
 
 .card-deck {
@@ -171,7 +178,6 @@
     }
   }
 }
-
 
 //
 // Card groups
@@ -235,7 +241,6 @@
   }
 }
 
-
 //
 // Columns
 //
@@ -257,7 +262,6 @@
     }
   }
 }
-
 
 //
 // Accordion
