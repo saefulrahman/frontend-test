@@ -1,5 +1,6 @@
 import React, { Fragment, FC } from "react";
 import { Card, CardImg, CardText, CardBody, CardTitle } from "reactstrap";
+import moment from "moment";
 import { Article } from "pages/LandingPage";
 
 interface AllPostsProps {
