@@ -191,6 +191,79 @@ main {
       margin-right: 3px;
     }
   }
+  .post {
+    position: relative;
+    line-height: 1.8;
+    width: 100%;
+    padding: 0 0 24px;
+    color: $gray-800;
+    background: $white;
+
+    h1 {
+      margin: 0 0 10px;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      border: none;
+      margin: 0 0 1.5rem;
+      padding: 0;
+    }
+
+    .date {
+      display: block;
+      margin: 0 0 1.5rem;
+      padding: 0;
+    }
+    .featured-image {
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin: 0 0 1.5rem;
+      }
+    }
+
+    a {
+      color: $blue;
+      text-decoration: none;
+      &:hover {
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+    .post-body {
+      font-style: normal;
+      font-size: 1.2em;
+      .content {
+        color: #4d4d4d;
+        figure {
+          margin: 1.5rem auto;
+          img {
+            display: block;
+            width: auto;
+            margin: 0 auto;
+            border-radius: 8px !important;
+            max-width: 100%;
+            border: 1px solid $gray-200;
+          }
+          figcaption {
+            color: $gray-600;
+            margin: 10px 0 0;
+            text-align: center;
+            font-size: 0.95em;
+          }
+        }
+      }
+      p,
+      blockquote {
+        margin: 0 0 1.5em;
+      }
+    }
+  }
 }
 footer {
   background: $gray-100;
