@@ -18,7 +18,7 @@ const AllPosts: FC<AllPostsProps> = ({ items }) => {
             <div className="col-lg-4 d-flex align-items-stretch mb-4">
               <Card>
                 <a href={article.url} title="{article.title}">
-                  <CardImg top src={article.urlToImage} alt={article.title} width="336" height="190" />
+                  <CardImg top src={`${article.urlToImage != null ? article.urlToImage : "images/default-thumbnail.jpg"}`} alt={article.title} width="336" height="190" />
                 </a>
                 <CardBody>
                   <div className="date">{moment(article.publishedAt).format("MMMM D, Y")}</div>
