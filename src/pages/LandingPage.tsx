@@ -37,7 +37,7 @@ const LandingPage: FC = (props) => {
 
   //Get API All Posts
   useEffect(() => {
-    axios.get("https://newsapi.org/v2/everything?q=teknologi&pageSize=9&apiKey=8d227da4ad3a4ebe823c51f7a599c140").then((response) => {
+    axios.get("https://newsapi.org/v2/everything?q=teknologi&pageSize=9&sortBy=publishedAt&apiKey=8d227da4ad3a4ebe823c51f7a599c140").then((response) => {
       console.log(response.data.articles);
       setAllPostsList(response.data.articles);
     });
